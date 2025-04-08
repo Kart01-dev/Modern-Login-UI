@@ -10,7 +10,7 @@
     background-image:url(./Black_box_BG.webp);
     background-size:cover;
     display: flex;
-    justify-content: center; /* Main axiz / x-axis dekhta he */
+    justify-content: center; 
     align-items: center;
    
 }
@@ -23,8 +23,7 @@
     /* filter: blur(10px);  -> ye work nhi krega ye pure content ko blur kr dega   */ ;
     backdrop-filter: blur(3px);
 
-    /* Abhi hame niche wale content -> login page,input,forgot,etc. ko center me lana he toh unka parent .loginpage he 
-    so abhi usme hame flex,justify-content,align-items use kreinge */
+   
     display: flex;
     justify-content:center; /* Main axiz / x-axis dekhta he */
     align-items: center;
@@ -43,8 +42,7 @@
     
     display: flex;
     width: 50%;
-    justify-content: space-between;  /*ab iss point pe ye issue aayega jo hamne html me password class ke content ->
-    1. remember me ,2. label , 3.forgot  -> ise thino ko child consider krega so hame ek div bana he jisme remember me and label ho */
+    justify-content: space-between;  
     font-size: 20px;
 
 }
