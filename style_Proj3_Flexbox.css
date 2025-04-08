@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image:url(./Black_box_BG.webp);
+    background-size:cover;
+    display: flex;
+    justify-content: center; /* Main axiz / x-axis dekhta he */
+    align-items: center;
+   
+}
+
+.loginpage{
+    width: 50%;
+    height: 70%;
+    background: #9a9b9a38;
+    border-radius: 30px;
+    /* filter: blur(10px);  -> ye work nhi krega ye pure content ko blur kr dega   */ ;
+    backdrop-filter: blur(3px);
+
+    /* Abhi hame niche wale content -> login page,input,forgot,etc. ko center me lana he toh unka parent .loginpage he 
+    so abhi usme hame flex,justify-content,align-items use kreinge */
+    display: flex;
+    justify-content:center; /* Main axiz / x-axis dekhta he */
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.logindetails{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.password{
+    
+    display: flex;
+    width: 50%;
+    justify-content: space-between;  /*ab iss point pe ye issue aayega jo hamne html me password class ke content ->
+    1. remember me ,2. label , 3.forgot  -> ise thino ko child consider krega so hame ek div bana he jisme remember me and label ho */
+    font-size: 20px;
+
+}
+
+h1{
+    font-size: 80px;
+}
+
+input[type="text"],input[type="password"]{
+    border: none;
+    border-radius: 10px;
+    /* height: 50px;  -> isse iss liye use nhi kiya kiu ki Enter you mail ke yaha pe jo starting me gap he vo nhi ho rha , iss liye ab ham PAdding ka use kreinge */
+    padding: 20px;
+    
+}
+
+button{
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 20px 40px;
+    background: linear-gradient(150deg,grey,rgb(248, 248, 248),black);
+    cursor: pointer;
+}
+
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+p{
+    text-decoration: underline;
+}
+
+label{
+    cursor: pointer;
+}
